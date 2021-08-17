@@ -1,1 +1,1 @@
-# My Portfolio with Nectjs
+# My Portfolio with Nextjs
