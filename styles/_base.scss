@@ -226,3 +226,16 @@ html.has-scroll-dragging {
   right: auto;
   bottom: 0;
 }
+
+.resume {
+  font-size: 5rem;
+  margin-bottom: 20px;
+  text-decoration: none;
+  color: blueviolet;
+  letter-spacing: -2px;
+  align-self: flex-start;
+  transition: all .2s ease-in-out;
+      &:hover {
+          letter-spacing: 3px;
+      }
+}

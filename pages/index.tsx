@@ -199,7 +199,7 @@ const index: React.FC<indexProps> = ({}) => {
           <header className="header">
             <div className="header__hero">
               <div className="header__hero--heading">
-                <span>turning ideas into </span> <br />
+                <span>Turning ideas into </span> <br />
                 <span>real life </span>
                 <span className="header__hero--heading-gradient">
                   products{" "}
@@ -325,7 +325,7 @@ const index: React.FC<indexProps> = ({}) => {
                   data-scroll
                   data-scroll-offset="35%"
                   data-scroll-repeat={true}
-                  data-scroll-class="alexxandria-anim"
+                  data-scroll-class="roqquAnim"
                   className="heading-2"
                 >
                   Roqqu
@@ -370,7 +370,7 @@ const index: React.FC<indexProps> = ({}) => {
                   data-scroll
                   data-scroll-offset="35%"
                   data-scroll-repeat={true}
-                  data-scroll-class="pixelchef-anim"
+                  data-scroll-class="reinashouseAnim"
                   className="heading-2"
                 >
                   Reinashouse 
@@ -418,7 +418,7 @@ const index: React.FC<indexProps> = ({}) => {
                   data-scroll
                   data-scroll-offset="35%"
                   data-scroll-repeat={true}
-                  data-scroll-class="heatrow-anim"
+                  data-scroll-class="badmusAnim"
                   className="heading-2"
                 >
                   Badmus
@@ -463,7 +463,7 @@ const index: React.FC<indexProps> = ({}) => {
                   data-scroll
                   data-scroll-offset="35%"
                   data-scroll-repeat={true}
-                  data-scroll-class="adeola-anim"
+                  data-scroll-class="orjiAnim"
                   className="heading-2"
                 >
                   WapSecure Portfolio
@@ -495,6 +495,7 @@ const index: React.FC<indexProps> = ({}) => {
                 </div>
               </div>
             </div>
+            <a className="resume" href="svg/Orji-joseph.pdf" target="_blank" rel="noopener noreferrer">Download Resume 📗</a>
           </section>
           <section
             data-scroll
@@ -558,7 +559,7 @@ const index: React.FC<indexProps> = ({}) => {
               Thanks for stopping by, I’m currently looking to join a new team of
               creative designers and developers. If you think we might be a good
               fit for one another, give me a
-              <a href="tel:+2348065549856"> call 🇳🇬 &nbsp;</a>
+              <a href="tel:+2348065549856"> call 🇳🇬, send a whatsapp DM </a>
               or send me an
               <a
                 href="mailto:writewapsecure@gmail.com"
