@@ -48,7 +48,6 @@ export const MobileNavigation = ({ variants, isOpen }: any) => (
         className="navigation-top"
       >
         <div className="navigation-top__left">
-        <a href="svg/Orji-joseph.pdf" target="_blank" rel="noopener noreferrer">Resume 📗</a>
           <h4 className="navigation-h4">WE COULD HOOK UP YOU KNOW</h4>
           <div className="navigation-top__left--links">
             <a href="https://github.com/wapsecure" rel="noopener" target="_blank">
