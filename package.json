@@ -8,7 +8,10 @@
     "type-check": "tsc"
   },
   "dependencies": {
-    "framer-motion": "latest",
+    "@chakra-ui/react": "^1.8.6",
+    "@emotion/react": "^11.8.2",
+    "@emotion/styled": "^11.8.1",
+    "framer-motion": "^6.2.8",
     "hover-effect": "^1.1.0",
     "locomotive-scroll": "^4.1.1",
     "next": "latest",
