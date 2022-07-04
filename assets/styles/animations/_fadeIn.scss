@@ -1,0 +1,36 @@
+.fadeIn {
+  animation: slideUpIn;
+  animation-duration: 400ms;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+}
+
+.strictFadeIn {
+  animation: fadingIn;
+  animation-duration: 400ms;
+  animation-timing-function: ease;
+  animation-iteration-count: 1;
+}
+
+@keyframes fadingIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes slideUpIn {
+  0% {
+    opacity: 0.6;
+   top: 0;
+  }
+
+  100% {
+    opacity: 1;
+   top: 28px;
+  
+  }
+}

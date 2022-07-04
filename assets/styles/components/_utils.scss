@@ -1,0 +1,109 @@
+// flex__layout
+
+.centered {
+  @apply flex justify-center items-center;
+}
+
+// layout____container
+.box {
+  @apply flex items-center;
+
+  &_full {
+    @apply w-full h-full;
+  }
+
+  &_col {
+    @apply flex-col;
+  }
+
+  &_sb {
+    @apply justify-between;
+  }
+
+  &_icon {
+    // width: 30%;
+    @apply centered p-4;
+  }
+
+  &_image {
+    height: 400px;
+    // width: 300px;
+    @apply centered  md:w-1/2;
+  }
+
+  &_text {
+    width: 40%;
+  }
+}
+
+.box_image {
+  width:380px;
+  height: 500px;
+  box-shadow: 20px 20px 0px 0px #fba1da4a;
+  
+  border: 1px solid  #fba1da4a;
+  // @apply  ;
+
+  &_project{
+      width: 700px;
+        height: 400px;
+  }
+}
+
+.box_col {
+  @apply flex flex-col space-y-2;
+
+  &_right {
+    @apply text-right items-end
+  }
+
+  &_left {
+    @apply text-left items-start
+  }
+}
+
+.box3 {
+  @apply w-full h-auto p-6 bg-fuchsia-700;
+}
+
+.box4 {
+  @apply w-full h-72 p-6;
+}
+
+.box_flex {
+}
+.box_between {
+}
+.box {
+  &_flex {
+    @apply bg-lime-500 p-4;
+  }
+  &_middle {
+  }
+  &_padding {
+  }
+  &_overlay {
+  }
+  &_grid {
+  }
+}
+
+.cursor {
+  width: 8rem;
+  height: 8rem;
+  position: absolute;
+  top: 40%;
+  right: 20%;
+  pointer-events: none;
+  transition: left top 0.1s ease-in-out;
+  z-index: 1233333;
+  // background-image: url("../public/svg/cursor.svg");
+  background-size: contain;
+  background-repeat: no-repeat;
+  border: 2px solid red;
+  animation: cursorAnim 10s infinite linear;
+
+  @media only screen and (max-width: 52.5em) {
+    opacity: 0;
+  }
+}

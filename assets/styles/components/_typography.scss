@@ -1,0 +1,82 @@
+.header {
+    @apply text_gradient font-joe text-6xl font-black;
+
+    &_bigger{
+        font-size: 64px;
+    }
+}
+
+.header2-custom{
+      @apply  font-joe text-4xl font-black;
+}
+.header1 {
+    @apply text_gradient font-joe text-3xl font-black;
+}
+.header2 {
+    @apply text-pri-3 font-joe text-4xl font-black;
+}
+.header3 {
+    @apply text-pri-3 font-joe text-2xl font-black;
+}
+.header4 { 
+}
+.header5 {
+}
+
+.body {
+    @apply text-pri-3 text-xl font-joe;
+    padding: 4px 0;
+    // letter-spacing: -1px;
+    // line-height: 1;
+
+    &2{
+    @apply  font-nun;
+    }
+
+    span{
+    @apply text-pri-main font-medium;
+    }
+}
+
+.body-custom {
+  @apply  text-xl font-joe;
+  padding: 4px 0;
+
+}
+.title {
+}
+.sub-title {
+}
+.para {
+}
+
+.link {
+    @apply font-joe text-pri-main;
+  padding: 4px 0;
+  // letter-spacing: 1px;
+  line-height: 1;
+  transition: color 0.25s ease;
+
+  &_feature{
+    @apply font-nun;
+  }
+
+
+  &:hover {
+    @apply text-sec-main;
+  }
+
+  &_logo {
+    @apply text-3xl font-pac;
+  }
+
+  &_nav {
+    @apply text-lg px-4  mx-4 ;
+  }
+}
+.link1 {
+}
+.link2 {
+}
+.link3 {
+}

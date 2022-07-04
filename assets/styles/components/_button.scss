@@ -1,0 +1,20 @@
+.btn{
+    @apply bg-pri-main gradient p-2 px-4  w-auto font-mono  text-pri-1;
+    &:hover{
+    @apply shadow-lg;
+    }
+
+
+    transition:.5s;
+}
+
+.btn1 {
+    @apply p-2 px-4 w-auto font-mono ;
+
+    &:hover {
+        @apply shadow-lg;
+    }
+
+
+    transition:.5s;
+}

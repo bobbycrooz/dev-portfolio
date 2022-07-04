@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&family=Fira+Mono:wght@400;500;700&family=Josefin+Sans:wght@100;200;300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Pacifico&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import "./animations/index.scss";
+@import "./components/index.scss";
+@import "./mixins/responsiveness";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+//
+body {
+  background-attachment: fixed;
+  background-image: url("/webp/coding1.jpg");
+  // background-color: red;
+  background-size: cover;
+  background-position:top center;
+  background-repeat: no-repeat;
+  // width: 100vw;
+  // height: 100vh;
+}
+
+.halfViewScreen {
+  height: auto;
+}
+
+.floating-nav {
+  z-index: 999999;
+  background-color: #e9d9e34a;
+  backdrop-filter: blur(2px);
+  -webkit-backdrop-filter: blur(2px);
+  border-radius: 10px;
+  border: 0.5px solid #fba1da4a;
+}
+
+.portfolio-image {
+  transition: 0.3s all ease;
+  &:hover {
+    transform: scale(1.4);
+
+    @media only screen and (max-width: 52.5em) {
+      transform: scale(1);
+
+    }
+  }
+}

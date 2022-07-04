@@ -1,8 +1,10 @@
 import React from "react";
 import { AnimatePresence } from "framer-motion";
 import { useRouter } from "next/router";
-import { ChakraProvider } from "@chakra-ui/react";
-import "../styles/global.scss";
+import { store } from "../redux/store";
+import { Provider } from "react-redux";
+import "../assets/styles/index.scss";
+import { useResizer } from "../hooks/resizer";
 
 function handleExitComplete() {
   if (typeof window !== "undefined") {
@@ -10,16 +12,28 @@ function handleExitComplete() {
   }
 }
 
+
+
 function MyApp({ Component, pageProps }: any) {
   const router = useRouter();
+  const [isMobile, setIsMobile] = React.useState<boolean>(false);
+  const [clientWidth, setClientWidth] = React.useState(0);
+
+  // hooks
+
+  useResizer(setIsMobile, setClientWidth);
   return (
-    <div>
-      <AnimatePresence exitBeforeEnter onExitComplete={handleExitComplete}>
-        <ChakraProvider>
-          <Component {...pageProps} key={router.route} />
-        </ChakraProvider>
-      </AnimatePresence>
-    </div>
+    <AnimatePresence exitBeforeEnter onExitComplete={handleExitComplete}>
+      <Provider store={store}>
+          <Component
+            {...pageProps}
+            key={router.route}
+            isMobile={isMobile}
+            clientWidth={clientWidth}
+            currentPath={router.pathname.trim()}
+          />
+      </Provider>
+    </AnimatePresence>
   );
 }
 
