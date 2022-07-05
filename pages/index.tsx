@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+import React, {  } from "react";
 // import HeadMeta from "../components/Head";
 // import { motion } from "framer-motion";
 // import { Navigation } from "../components/Navigation/Navigation";
 // import router from "next/router";
 
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 // import { randomPhoto } from "../assets/photos";
 
 import Navbar from "../components/Navbar";
@@ -14,10 +14,10 @@ import Services from "../components/Services";
 import Hero from "../components/Hero";
 import Contact from "../components/Contact";
 import Footer from "../components/Footer";
-import Testimonials from "../components/Testimonials";
+// import Testimonials from "../components/Testimonials";
 
-const Home = ({ isMobile, clientWidth, currentPath }: HomeProps) => {
-  const userState = useSelector((state: { auth: any }) => state.auth);
+const Home = ({ isMobile }: HomeProps) => {
+  // const userState = useSelector((state: { auth: any }) => state.auth);
 
   return (
     <>

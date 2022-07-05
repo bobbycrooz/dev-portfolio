@@ -1,25 +1,25 @@
 import Image from "next/image";
-import React, { useState } from "react";
+import React from "react";
 import Section from "./style";
 // import App from '../../assets/images/app.png'
 import { BsArrowDown } from "react-icons/bs";
 
 import bobBg from "../../assets/images/nobg.png";
 
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 // import { randomPhoto } from "../assets/photos";
 // import bobBg from "../assets/images/nobg.png";
 
 // import Image from "next/image";
 
-interface AppProps {
-  isMobile?: boolean;
-  flexDirection?: "left" | "right";
-  toRight: boolean;
-}
+// interface AppProps {
+//   isMobile?: boolean;
+//   flexDirection?: "left" | "right";
+//   toRight: boolean;
+// }
 
 const Index = ({ isMobile }: { isMobile: boolean }) => {
-  const userState = useSelector((state: { auth: any }) => state.auth);
+  // const userState = useSelector((state: { auth: any }) => state.auth);
 
   return (
     <Section className="hero  md:px-40 py-11 md:py-20 bg-white md:h-1/2 flex justify-around flex-col md:flex-row shadow index-6">

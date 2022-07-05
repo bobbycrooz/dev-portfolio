@@ -1,25 +1,24 @@
-import Image from "next/image";
-import React, { useState } from "react";
+import React, {  } from "react";
 import Section from './style'
-import App from '../../assets/images/app.png'
-import {RiComputerLine} from 'react-icons/ri'
+// import App from '../../assets/images/app.png'
+// import {RiComputerLine} from 'react-icons/ri'
 
 
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 // import { randomPhoto } from "../assets/photos";
 // import bobBg from "../assets/images/nobg.png";
 
 // import Image from "next/image";
 
-interface AppProps {
-  isMobile?:boolean;
-  flexDirection?:'left' | 'right';
-  toRight:boolean;
+// interface AppProps {
+//   isMobile?:boolean;
+//   flexDirection?:'left' | 'right';
+//   toRight:boolean;
 
-}
+// }
 
 const Index = () => {
-  const userState = useSelector((state: { auth: any }) => state.auth);
+  // const userState = useSelector((state: { auth: any }) => state.auth);
 
   return (
     <Section className="px-40 bg-white   centered">
@@ -34,7 +33,7 @@ const Index = () => {
           <div className="card_train box p-8 ">
             {Array(2)
               .fill(1)
-              .map((item, index) => (
+              .map((_item, _index) => (
                 <div className="card_item bg-pri-5 shadow-lg  p-4 relative mx-8">
                   <div className=" bg-pri-1 absolute thumbnail "></div>
 

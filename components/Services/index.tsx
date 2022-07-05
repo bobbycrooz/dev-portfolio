@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, {  } from "react";
 import Section from "./style";
-import { RiComputerLine, RiReactjsFill, RiFlutterFill } from "react-icons/ri";
+import {  RiReactjsFill, RiFlutterFill } from "react-icons/ri";
 import { FaNodeJs } from "react-icons/fa";
 
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 // import { randomPhoto } from "../assets/photos";
 // import bobBg from "../assets/images/nobg.png";
 
@@ -43,8 +43,8 @@ const serviceArr = [
 
 
 
-const Index = ({ isMobile }: AppProps) => {
-	const userState = useSelector((state: { auth: any }) => state.auth);
+const Index = ({  }: AppProps) => {
+	// const userState = useSelector((state: { auth: any }) => state.auth);
 
 	return (
 		<Section className="px-4 md:px-40 bg-white pb-20 py-16" id='services'>

@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, { useState } from "react";
+import React, {  } from "react";
 import Section, { CardLayout } from "./style";
 import admin from "../../assets/images/admin-lite.png";
 import gig from '../../assets/images/gig.png'
@@ -12,7 +12,7 @@ import quiz from '../../assets/images/quiz.png'
 import paw from '../../assets/images/paw.png'
 import country from '../../assets/images/country.png'
 
-import { useSelector } from "react-redux";
+// import { useSelector } from "react-redux";
 // import { randomPhoto } from "../assets/photos";
 // import bobBg from "../assets/images/nobg.png";
 
@@ -129,7 +129,7 @@ const projectArr = [
 ];
 
 const Projects =  ({ isMobile }: {isMobile:boolean}) => {
-	const userState = useSelector((state: { auth: any }) => state.auth);
+	// const userState = useSelector((state: { auth: any }) => state.auth);
 
 	return (
 		<Section className="bg-white  py-16 " id='project'>
@@ -148,7 +148,7 @@ const Projects =  ({ isMobile }: {isMobile:boolean}) => {
 };
 
 const ProjectItem = ({ toRight, projectInfo ,  isMobile }: AppProps) => {
-	const userState = useSelector((state: { auth: any }) => state.auth);
+	// const userState = useSelector((state: { auth: any }) => state.auth);
 
 	return (
 		<CardLayout
