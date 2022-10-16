@@ -3,7 +3,7 @@ import React from "react";
 import Section from "./style";
 // import App from '../../assets/images/app.png'
 import { BsArrowDown } from "react-icons/bs";
-
+import { useRouter } from "next/router";
 import bobBg from "../../assets/images/nobg.png";
 
 // import { useSelector } from "react-redux";
@@ -20,9 +20,11 @@ import bobBg from "../../assets/images/nobg.png";
 
 const Index = ({ isMobile }: { isMobile: boolean }) => {
   // const userState = useSelector((state: { auth: any }) => state.auth);
+  const {push} = useRouter()
 
   return (
-    <Section className="hero  md:px-40 py-11 md:py-20 bg-white md:h-1/2 flex justify-around flex-col md:flex-row shadow index-6">
+    <Section className="hero   md:px-40 py-11 md:py-20 bg-white md:h-1/2 flex justify-around flex-col md:flex-row shadow index-6">
+   
       <div
         className={`${
           !isMobile && "box_text"
@@ -40,10 +42,12 @@ const Index = ({ isMobile }: { isMobile: boolean }) => {
           I have professional experience in building pixel perfect User
           interface on web and mobile with <span>ReactJs</span>{" "}
           <span>VueJs</span> <span>NextJs</span>,
+
+
           <br />I am more passionate about impacting significantly in projects
         </p>
 
-        <button className="btn shadow-md">Resume</button>
+        <button onClick={() => push('https://drive.google.com/file/d/1nDYnviSnKnp6Uzt5eXmf5vgH74giZNYM/view?usp=sharing')} className="btn shadow-md">Resume</button>
       </div>
       {isMobile && (
         <div className="down w-full flex justify-center mt-11">

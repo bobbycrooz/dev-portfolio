@@ -40,7 +40,7 @@ const Navbar = ({ isMobile }: any) => {
   });
 
   return (
-    <NavbarLayout className=" h-20 shadow-sm bg-white  flex px-4 md:px-48 ">
+    <NavbarLayout className=" h-20 shadow-md z-10 bg-white  flex px-4 md:px-48 ">
       <div className="box box_sb  w-full">
         {!showMobileMenu && (
           <h1 className="link link_logo ">{isMobile ? "bd" : "bobbydev"}</h1>

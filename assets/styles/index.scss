@@ -52,3 +52,18 @@ body {
     }
   }
 }
+
+
+.hero{
+  background-image: url(../images/react-green.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 100% ;
+  // background-image: url(../images/intro_bg.png) url(../images/react-green.png);
+
+  @media screen and (min-width: 400px) {
+  background-size: 50% ;
+    
+  }
+
+}

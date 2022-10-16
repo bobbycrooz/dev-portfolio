@@ -170,7 +170,7 @@ const ProjectItem = ({ toRight, projectInfo ,  isMobile }: AppProps) => {
 					toRight && "flex-row-reverse "
 				}`}
 			>
-				<div className=" portfolio-image md:w-[480px]  br" >
+				<div className=" portfolio-image md:w-[480px]  " >
 					<Image src={projectInfo.img} />
 				</div>
 
