@@ -1,5 +1,5 @@
 import Image from "next/image";
-import React, {  } from "react";
+import React, { useRef } from "react";
 import Section, { CardLayout } from "./style";
 import admin from "../../assets/images/admin-lite.png";
 import gig from '../../assets/images/gig.png'
@@ -11,7 +11,9 @@ import dzines from '../../assets/images/dzines.png'
 import quiz from '../../assets/images/quiz.png'
 import paw from '../../assets/images/paw.png'
 import country from '../../assets/images/country.png'
-
+// import { gsap } from "gsap";
+import Link from "next/link";
+// import { Item } from "framer-motion/types/components/Reorder/Item";
 // import { useSelector } from "react-redux";
 // import { randomPhoto } from "../assets/photos";
 // import bobBg from "../assets/images/nobg.png";
@@ -33,7 +35,7 @@ const projectArr = [
 		name: "GIGXPAD",
 		description:
 			"A crypto platform that provides avenue for traders to Buy/Sell  and Hold crypto assets",
-		live: "https://gigxpad.com",
+		live: "https://gigxpad.com/",
 		tools: ["NextJs", "Typescript", "Redux", "TailwindCss"],
 		img: gig,
 	},
@@ -43,7 +45,7 @@ const projectArr = [
 		name: "Admin-lite",
 		description:
 			"An industrial admin dashboard to track, monitor and manage transaction, users, assets of the company",
-		live: "https://gigxpad.com",
+		live: "https://admin-lite.netlify.app/admin-login",
 		tools: ["NextJs", "Typescript", "Redux", "TailwindCss"],
 		img: admin,
 	},
@@ -53,17 +55,17 @@ const projectArr = [
 		name: "Ribbon protocol",
 		description:
 			"An industrial admin dashboard to track, monitor and manage transaction, users, assets of the company",
-		live: "https://gigxpad.com",
+		live: "https://focused-brown-23435a.netlify.app/#/",
 		tools: ["NextJs", "Typescript", "Redux", "TailwindCss"],
 		img: ribPro,
 	},
 	
 		{
 		feature: "DEFI platform",
-		name: "Ribbon Defi",
+		name: "Ribbbon Defi",
 		description:
 			"An industrial admin dashboard to track, monitor and manage transaction, users, assets of the company",
-		live: "https://gigxpad.com",
+		live: "https://dev-defi.ribbonblockchain.com",
 		tools: ["NextJs", "Typescript", "Redux", "TailwindCss"],
 		img: defi,
 	},
@@ -73,7 +75,7 @@ const projectArr = [
 		name: "MedonCal",
 		description:
 			"An industrial admin dashboard to track, monitor and manage transaction, users, assets of the company",
-		live: "https://gigxpad.com",
+		live: "https://aptt.netlify.app/",
 		tools: ["NextJs", "Typescript", "Redux", "TailwindCss"],
 		img: med,
 	},
@@ -83,7 +85,7 @@ const projectArr = [
 		name: "Ajo",
 		description:
 			"An industrial admin dashboard to track, monitor and manage transaction, users, assets of the company",
-		live: "https://gigxpad.com",
+		live: "https://quizzical-blackwell-c2a880.netlify.app/",
 		tools: ["NextJs", "Typescript", "Redux", "TailwindCss"],
 		img: ajo,
 	},
@@ -93,7 +95,7 @@ const projectArr = [
 		name: "D-zines",
 		description:
 			"An industrial admin dashboard to track, monitor and manage transaction, users, assets of the company",
-		live: "https://gigxpad.com",
+		live: "https://d-ecommerce.netlify.app/",
 		tools: ["ReactJs", "GraphQL", "", ""],
 		img: dzines,
 	},
@@ -103,7 +105,7 @@ const projectArr = [
 		name: "Quizz",
 		description:
 			"An industrial admin dashboard to track, monitor and manage transaction, users, assets of the company",
-		live: "https://gigxpad.com",
+		live: "https://fancbt.netlify.app/",
 		tools: ["ReactJs", "Nodejs", "Styled-components", "ExpressJs"],
 		img: quiz,
 	},
@@ -113,7 +115,7 @@ const projectArr = [
 		name: "Paw Finder",
 		description:
 			"An industrial admin dashboard to track, monitor and manage transaction, users, assets of the company",
-		live: "https://gigxpad.com",
+		live: "https://pawkernel.netlify.app/",
 		tools: ["VueJs", "Nodejs", "Sass", "VueX"],
 		img: paw,
 	},
@@ -122,7 +124,7 @@ const projectArr = [
 		name: "Counrty Select",
 		description:
 			"An industrial admin dashboard to track, monitor and manage transaction, users, assets of the company",
-		live: "https://gigxpad.com",
+		live: "https://bobgig.netlify.app/",
 		tools: ["Typescript", "Styled-Components"],
 		img: country,
 	},
@@ -130,10 +132,16 @@ const projectArr = [
 
 const Projects =  ({ isMobile }: {isMobile:boolean}) => {
 	// const userState = useSelector((state: { auth: any }) => state.auth);
+	const boxRef = useRef(null);
+
+	
+	// React.useEffect(() => {
+	// 	gsap.to(boxRef.current, { rotation: "+=360" });
+	//   });
 
 	return (
 		<Section className="bg-white  py-16 " id='project'>
-			<h1 className="title  header2 centered  my-10">Projects</h1>
+			<h1 ref={boxRef} className="title  header2 centered  my-10">Projects</h1>
 
 			{projectArr.map((item, index) => (
 				<ProjectItem
@@ -153,7 +161,7 @@ const ProjectItem = ({ toRight, projectInfo ,  isMobile }: AppProps) => {
 	return (
 		<CardLayout
 		isMobile={isMobile}
-			className={` feature md:px-48 p-4 md:p-11 my-4 ${
+			className={` feature md:px-48 p-4 md:p-11  my-20  ${
 				toRight && " bg-[#f0f0f081]"
 			}`}
 		>
@@ -162,7 +170,7 @@ const ProjectItem = ({ toRight, projectInfo ,  isMobile }: AppProps) => {
 					toRight && "flex-row-reverse "
 				}`}
 			>
-				<div className=" portfolio-image" >
+				<div className=" portfolio-image md:w-[480px]  br" >
 					<Image src={projectInfo.img} />
 				</div>
 
@@ -174,10 +182,12 @@ const ProjectItem = ({ toRight, projectInfo ,  isMobile }: AppProps) => {
 					<p className="tag_name link link_feature capitalize">
 						{projectInfo.feature}
 					</p>
+
 					<h3 className="project_name header1 text-2xl">
 						{projectInfo.name}
 					</h3>
-					<div className=" w-full md:w-[700px] description p-4 bg-pri-1">
+
+					<div className=" w-full md:w-[700px] z-10 p-4 bg-pri-1 ">
 						<p className="body body2">
 							{projectInfo.description}
 						</p>
@@ -194,6 +204,8 @@ const ProjectItem = ({ toRight, projectInfo ,  isMobile }: AppProps) => {
 					</div>
 
 					<div className="box">
+
+
 						<div className="box_icon">
 							<svg
 								stroke="#716f8a"
@@ -207,7 +219,11 @@ const ProjectItem = ({ toRight, projectInfo ,  isMobile }: AppProps) => {
 								<path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.012 8.012 0 0 0 16 8c0-4.42-3.58-8-8-8z"></path>
 							</svg>
 						</div>
-						<div className="box_icon">
+
+
+
+						<Link href={projectInfo.live}>
+						<div className="box_icon cursor-pointer">
 							<svg
 								stroke="##716f8a"
 								fill="#716f8a"
@@ -221,6 +237,7 @@ const ProjectItem = ({ toRight, projectInfo ,  isMobile }: AppProps) => {
 								<path d="M5 5a2 2 0 00-2 2v8a2 2 0 002 2h8a2 2 0 002-2v-3a1 1 0 10-2 0v3H5V7h3a1 1 0 000-2H5z"></path>
 							</svg>
 						</div>
+												</Link>
 					</div>
 				</div>
 			</div>
