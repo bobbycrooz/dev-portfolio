@@ -1,7 +1,7 @@
 import React, {  } from "react";
 import Section from "./style";
-import {  RiReactjsFill, RiFlutterFill } from "react-icons/ri";
-import { FaNodeJs } from "react-icons/fa";
+import { RiReactjsFill } from "react-icons/ri";
+import { FaNodeJs, FaAws } from "react-icons/fa";
 
 // import { useSelector } from "react-redux";
 // import { randomPhoto } from "../assets/photos";
@@ -32,10 +32,10 @@ const serviceArr = [
 		),
 	},
 	{
-		name: "Mobile App",
-		des: "Build cross platform  mobile applications with flutter",
+		name: "Devops and AWS",
+		des: "Deployment pipelines and infrastructure management with AWS services",
 		icon: () => (
-			<RiFlutterFill className="computer text-3xl text-sky-300 " />
+			<FaAws className="computer text-3xl text-sky-300 " />
 		),
 	},
 ];

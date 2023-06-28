@@ -1,20 +1,37 @@
-.btn{
-    @apply bg-pri-main gradient p-2 px-4  w-auto font-mono  text-pri-1;
-    &:hover{
+.btn {
+  @apply bg-pri-main gradient p-2 px-4  w-auto font-mono  text-pri-1;
+  &:hover {
     @apply shadow-lg;
-    }
+  }
 
-
-    transition:.5s;
+  transition: 0.5s;
 }
 
 .btn1 {
-    @apply p-2 px-4 w-auto font-mono ;
+  @apply p-2 px-4 w-auto font-mono;
 
-    &:hover {
-        @apply shadow-lg;
+  &:hover {
+    @apply shadow-lg;
+  }
+
+  transition: 0.5s;
+}
+
+.w_btn {
+  @apply transition-all duration-500 ease-in-out relative px-6 py-3 text-white  border border-pri-main;
+
+  &::before {
+    @apply absolute h-full  bg-pri-main left-0 top-0 z-[-1];
+        width: 1px;
+
+    content: "";
+    transition: all  0.5s ease-in-out;
+  }
+  &:hover {
+      
+    &::before {
+      transition: all 0.5s ease-in-out;
+        width: 100px;
     }
-
-
-    transition:.5s;
+  }
 }

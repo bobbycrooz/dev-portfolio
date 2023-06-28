@@ -18,7 +18,7 @@ import Section from "./style";
 
 const Index = () => {
   // const userState = useSelector((state: { auth: any }) => state.auth);
-  const {push} = useRouter()
+  const { push } = useRouter();
 
   return (
     <Section
@@ -26,16 +26,34 @@ const Index = () => {
       id="contact"
     >
       <div className="box centered  my-11 py-20  w-full h-full">
-        <div className="content space-y-6 text-center strictFadeIn">
-          <h1 className="header2-custom text-white">Get in touch</h1>
+        <div className="content space-y-6 text-left strictFadeIn ">
+          <h1 className="header2-custom text-white">Why you should Hire me?</h1>
 
-          <p className="body-custom text-white md:w-1/2 mx-auto">
-            My name is idris, i am a software developer, I build web
-            applications with javascript, and I write backend and frontend code
-            to create a full-fledged working web-application.
-          </p>
+          <ul className="body-custom text-white md:w-1/2">
 
-          <button  onClick={() => push('https://docs.google.com/document/d/1eNKrED88lF1vW6qKYP18B9d2E-E6Vaxe6ahePyT7m5g/edit?usp=sharing')}  className="border border-white hover:shadow-white p-3 px-6 shadow-md">See my Application Letter</button>
+            <li>
+              The aim of every business entity building products is to deliver
+              quality product to their clients
+            </li>
+
+            <li>
+              I am not just a frontend developer, i take responsibilty of the
+              business and the product i am building
+            </li>
+
+            <li>And worry about it's growth and scalabiliy.</li>
+          </ul>
+
+          <button
+            onClick={() =>
+              push(
+                "https://wa.me/message/LXJBLFCKFZ7OP1"
+              )
+            }
+            className="w_btn"
+          >
+           <p className="z-10"> Whatsapp me</p>
+          </button>
         </div>
       </div>
     </Section>

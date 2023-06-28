@@ -22,7 +22,7 @@ body {
   background-image: url("/webp/coding1.jpg");
   // background-color: red;
   background-size: cover;
-  background-position:top center;
+  background-position: top center;
   background-repeat: no-repeat;
   // width: 100vw;
   // height: 100vh;
@@ -48,22 +48,32 @@ body {
 
     @media only screen and (max-width: 52.5em) {
       transform: scale(1);
-
     }
   }
 }
 
-
-.hero{
-  background-image: url(../images/react-green.png);
+.hero {
+  // background-image: url(../images/react-green.png);
   background-position: bottom right;
   background-repeat: no-repeat;
-  background-size: 100% ;
+  background-size: 100%;
   // background-image: url(../images/intro_bg.png) url(../images/react-green.png);
 
   @media screen and (min-width: 400px) {
-  background-size: 50% ;
-    
+    background-size: 50%;
   }
+}
 
+.open {
+  &:hover {
+    .dot {
+      box-shadow: 3px 3px 12px 4px #b363fed4, 2px 2px 10px 4px #b363feb5;
+
+      transition: 0.3s all ease;
+    }
+  }
+}
+.dot {
+  box-shadow: 2px 2px 10px 4px #b363feb5;
+  transition: 0.3s all ease;
 }

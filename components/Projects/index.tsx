@@ -1,4 +1,5 @@
 import Image from "next/image";
+// @ts-ignore 
 import React, { useRef } from "react";
 import Section, { CardLayout } from "./style";
 import admin from "../../assets/images/admin-lite.png";
@@ -11,6 +12,11 @@ import dzines from '../../assets/images/dzines.png'
 import quiz from '../../assets/images/quiz.png'
 import paw from '../../assets/images/paw.png'
 import country from '../../assets/images/country.png'
+import selbet from '../../assets/images/selfbet.png'
+import ware from '../../assets/images/warehouse_screenshot.png'
+import kaima from '../../assets/images/kaima.png'
+
+
 // import { gsap } from "gsap";
 import Link from "next/link";
 // import { Item } from "framer-motion/types/components/Reorder/Item";
@@ -30,6 +36,33 @@ interface AppProps {
 }
 
 const projectArr = [
+		{
+		feature: "aesthetic female fashion store",
+		name: "KAIMA.FASHION",
+		description:
+			"Fashion store brand showcase",
+		live: "https://kaima.fashion/",
+		tools: ["NextJs", "Typescript", "mailchimp", "TailwindCss"],
+		img: kaima,
+	},
+	{
+		feature: "warehouse management system",
+		name: "WAREHOUZIT.COM",
+		description:
+			"Built for warehouse owners to connect with warehouse seekers to find a secure place for their goods digitaly",
+		live: "https://warehouzit.com/",
+		tools: ["NextJs", "Typescript", "ContextAPI", "TailwindCss"],
+		img: ware,
+	},
+		{
+		feature: "betting platform",
+		name: "SELFBET",
+		description:
+			"Digital pool betting platform that allows users to bet on football matches and win big",
+		live: "https://selfbet.vercel.app",
+		tools: ["NextJs", "Typescript", "ContextAPI", "TailwindCss"],
+		img: selbet,
+	},
 	{
 		feature: "web3",
 		name: "GIGXPAD",

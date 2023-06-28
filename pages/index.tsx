@@ -1,4 +1,3 @@
-import React, {  } from "react";
 // import HeadMeta from "../components/Head";
 // import { motion } from "framer-motion";
 // import { Navigation } from "../components/Navigation/Navigation";

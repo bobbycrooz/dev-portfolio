@@ -19,5 +19,7 @@
     "target": "esnext"
   },
   "exclude": ["node_modules"],
-  "include": ["**/*.ts", "**/*.tsx", "pages/_app.tsx", "pages/index.tsx"]
+  "include": ["**/*.ts", "**/*.tsx", "pages/_app.tsx", "pages/index.tsx"],
+  "skipLibCheck": true
 }
+
