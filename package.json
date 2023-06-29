@@ -8,6 +8,7 @@
     "type-check": "tsc"
   },
   "dependencies": {
+    "@reduxjs/toolkit": "^1.9.5",
     "framer-motion": "^6.2.8",
     "gsap": "^3.10.4",
     "hover-effect": "^1.1.0",
