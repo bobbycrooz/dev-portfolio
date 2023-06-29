@@ -8,8 +8,6 @@
     "type-check": "tsc"
   },
   "dependencies": {
-    "@emotion/react": "^11.8.2",
-    "@emotion/styled": "^11.8.1",
     "@reduxjs/toolkit": "^1.8.1",
     "framer-motion": "^6.2.8",
     "gsap": "^3.10.4",
