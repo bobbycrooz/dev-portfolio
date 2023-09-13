@@ -38,7 +38,7 @@ const Index = ({ isMobile }: { isMobile: boolean }) => {
         </p> */}
 
         <p className="text-pri-3 text-xl md:text-[26px] font-joe space-y-6 leading-[120%]  ">
-          A <b className="underline">prfessional</b> software developer
+          A <b className="underline">prOfessional</b> software developer
           specialized in building
          
           web applications with Typescript tools{" "}
@@ -51,7 +51,9 @@ const Index = ({ isMobile }: { isMobile: boolean }) => {
             I also implement logics on the server with  <span className="text-pri-main font-medium border p-1 border-pri-main">Express Js</span>on Node,
             <br />
             <br />
-             Managing deployment infrastructure with{" "}
+            Managing deployment infrastructure with{" "}
+            <br />
+            
             <span className="text-pri-main font-medium border p-1 border-pri-main">AWS</span> and devOps practice.
             
           </p>
